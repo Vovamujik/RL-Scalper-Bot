@@ -1,0 +1,6 @@
+# Параметры сервиса инференса и логирования
+model_path: "experiments/scalper_ppo.zip"  # путь к сохранённой модели
+signal_threshold: 0.6                       # порог вероятности для считывания сигнала
+log:
+  url: "http://localhost:5000/log"       # endpoint для логирования сигналов
+  level: "INFO"                           # уровень логирования

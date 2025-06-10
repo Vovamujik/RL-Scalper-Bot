@@ -1,0 +1,17 @@
+source:
+  type: "ccxt"              # тип провайдера: ccxt для работы с биржами (Binance, Coinbase и т.д.)
+  exchange: "binance"       # биржа для загрузки данных
+  api_key: "YOUR_API_KEY"   # ваш API-ключ
+  secret: "YOUR_SECRET"     # ваш секретный ключ
+symbols:
+  - "BTC/USDT"              # список крипто-пар
+  - "ETH/USDT"
+  - "SOL/USDT"
+timeframe: "1m"            # интервал баров: 1m, 5m, tick
+start_date: "2020-01-01"    # начало исторического периода
+end_date: "2025-01-01"      # конец исторического периода
+
+# Пути сохранения данных
+paths:
+  raw_data: "data/raw/"      # папка для сырых данных
+  processed_data: "data/processed/"

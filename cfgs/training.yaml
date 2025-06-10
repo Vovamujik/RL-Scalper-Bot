@@ -1,0 +1,10 @@
+algorithm: "PPO"           # алгоритм: PPO, DQN, SAC, TD3 и т.д.
+hyperparameters:
+  learning_rate: 3e-4       # скорость обучения
+  gamma: 0.99               # коэффициент дисконтирования
+  batch_size: 64            # размер мини-батча
+  n_steps: 2048             # количество шагов для сбора данных
+  ent_coef: 0.01            # коэффициент энтропии (для PPO)
+  clip_range: 0.2           # clip параметр для PPO
+
+total_timesteps: 1000000    # общее число итераций обучения
